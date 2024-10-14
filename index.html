@@ -4,8 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
-    test
+    <section id="html5-drag" class="container">
+        <header>
+          <h2>Card Sorting - Library Site Menu</h2>
+        </header>
+        <div class="big-container">
+        <div class="left">
+      <article id="holder" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event)" ondragover="return dragOver(event)">
+        <div class="drag" id="boxA" draggable="true" ondragstart="return dragStart(event)">
+            <h2>Gelman Floor Maps</h2>
+        </div>
+        <div class="drag" id="boxB" draggable="true" ondragstart="return dragStart(event)">
+            <h2>Skills for academic Success</h2>
+        </div>
+        <div class="drag" id="boxC" draggable="true" ondragstart="return dragStart(event)">
+            <h2>CREATE Digital Studio</h2>
+        </div>
+        <div class="drag" id="boxC" draggable="true" ondragstart="return dragStart(event)">
+            <h2>Study Room Reservations</h2>
+        </div>
+        <div class="drag" id="boxC" draggable="true" ondragstart="return dragStart(event)">
+            <h2>Fellowships</h2>
+        </div>
+        <div class="drag" id="boxC" draggable="true" ondragstart="return dragStart(event)">
+            <h2>Ask Us</h2>
+        </div>
+        <div class="drag" id="boxC" draggable="true" ondragstart="return dragStart(event)">
+            <h2>Research Consultation Services</h2>
+        </div>
+        <div class="drag" id="boxC" draggable="true" ondragstart="return dragStart(event)">
+            <h2>Staff & Librarian Directory</h2>
+        </div>
+        <div class="drag" id="boxC" draggable="true" ondragstart="return dragStart(event)">
+            <h2>Course Design and Teaching</h2>
+        </div>
+        <div class="drag" id="boxC" draggable="true" ondragstart="return dragStart(event)">
+            <h2>Borrow, Renew & Request</h2>
+        </div>
+      </article>
+        </div>
+      <div class="right">
+        <form>
+        <input type="text" placeholder="Group name?">
+        </form>
+      <article id="dropIt" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event)" ondragover="return dragOver(event)"></article>
+      <form>
+        <input type="text" placeholder="Group name?">
+        </form> 
+      <article id="dropIt" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event)" ondragover="return dragOver(event)"></article>
+      <form>
+        <input type="text" placeholder="Group name?">
+        </form>    
+      <article id="dropIt" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event)" ondragover="return dragOver(event)"></article>
+      <form>
+        <input type="text" placeholder="Group name?">
+        </form>   
+      <article id="dropIt" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event)" ondragover="return dragOver(event)"></article>
+      <form>
+        <input type="text" placeholder="Group name?">
+        </form>
+      <article id="dropIt" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event)" ondragover="return dragOver(event)"></article>
+        </div>
+        </div>
+      </section><!-- /#html5-drag -->
 </body>
 </html>
