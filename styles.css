@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 .big-container {
   display: flex;
   width: 100%;
@@ -14,14 +18,25 @@ h1 {
 
 .container {
     margin: 0 auto;
-  }
+}
 
 .left {
   width: 30%;
+  position: fixed;
+  left: 0;
+  overflow-y: auto;
+  background-color: #ffffff;
+  max-height: 100vh;
 }
 
 .right {
   width: 60%;
+  margin-left: 30%;
+}
+
+.left,
+.right {
+  padding: 1rem;
 }
 
 input {
