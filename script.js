@@ -25,3 +25,17 @@ function dragStart(ev) {
         return false;
     }
   }
+
+  function addGroup() {
+    var form = document.createElement('form');
+    form.innerHTML = `<input type="text" placeholder="Group name?">`;
+
+    var article = document.createElement('article');
+    article.id = 'dropIt';
+    article.setAttribute('ondragenter', 'return dragEnter(event)');
+    article.setAttribute('ondrop', 'return dragDrop(event)');
+    article.setAttribute('ondragover', 'return dragOver(event)');
+
+    document.getElementById('list').appendChild(form);
+    document.getElementById('list').appendChild(article);
+  }

@@ -11,13 +11,13 @@
     <section id="html5-drag" class="container">
         <div class="big-container">
         <div class="left">
-            <h1>Card Sorting - Library Site Menu</h1>
+            <h1>Library Site Menu Items</h1>
       <article id="holder" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event)" ondragover="return dragOver(event)">
         <div class="drag" id="boxA" draggable="true" ondragstart="return dragStart(event)">
             <h2>Gelman Floor Maps</h2>
         </div>
         <div class="drag" id="boxB" draggable="true" ondragstart="return dragStart(event)">
-            <h2>Skills for academic Success</h2>
+            <h2>Skills for Academic Success</h2>
         </div>
         <div class="drag" id="boxC" draggable="true" ondragstart="return dragStart(event)">
             <h2>CREATE Digital Studio</h2>
@@ -45,27 +45,17 @@
         </div>
       </article>
         </div>
-      <div class="right">
-        <form>
+      <div class="right" id="right">
+        <p>Select a menu item from the left and drag it into the box below.</p>
+        <p>Click on the "+" next to "Add a new group" to make new categories as needed.</p>
+        <div id="list">
+        <form id="form">
         <input type="text" placeholder="Group name?">
         </form>
       <article id="dropIt" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event)" ondragover="return dragOver(event)"></article>
-      <form>
-        <input type="text" placeholder="Group name?">
-        </form> 
-      <article id="dropIt" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event)" ondragover="return dragOver(event)"></article>
-      <form>
-        <input type="text" placeholder="Group name?">
-        </form>    
-      <article id="dropIt" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event)" ondragover="return dragOver(event)"></article>
-      <form>
-        <input type="text" placeholder="Group name?">
-        </form>   
-      <article id="dropIt" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event)" ondragover="return dragOver(event)"></article>
-      <form>
-        <input type="text" placeholder="Group name?">
-        </form>
-      <article id="dropIt" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event)" ondragover="return dragOver(event)"></article>
+      </div>
+      <div><button id="new" class="btn" onclick="addGroup()">+</button> &nbsp; <span>Add a new group</span></div>
+      
         </div>
         </div>
       </section><!-- /#html5-drag -->
