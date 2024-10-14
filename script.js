@@ -17,7 +17,11 @@ function dragStart(ev) {
   // function defined for when drop element on target
   function dragDrop(ev) {
     var data = ev.dataTransfer.getData("Text");
-    ev.target.appendChild(document.getElementById(data));
-    ev.stopPropagation();
-    return false;
+    if (ev.target.id == "dropIt"){
+        ev.target.appendChild(document.getElementById(data));
+        ev.stopPropagation();
+        return false;
+    } else {
+        return false;
+    }
   }
