@@ -21,6 +21,13 @@ function dragStart(ev) {
         ev.target.appendChild(document.getElementById(data));
         ev.stopPropagation();
         return false;
+    } else if (ev.target.className == "drag") {
+      console.log("test");
+      ev.currentTarget.appendChild(document.getElementById(data));
+      ev.stopPropagation();
+      return false;
+    } else if (ev.target.id == "holder") {
+      ev.currentTarget.appendChild(document.getElementById(data));
     } else {
         return false;
     }

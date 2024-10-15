@@ -124,6 +124,8 @@ input {
   }
   
   #holder {
+    display: flex;
+    flex-direction: column;
     background: transparent;
     border-radius: 5px;
     height: 110px;
