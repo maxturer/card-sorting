@@ -36,6 +36,7 @@ function dragStart(ev) {
   function addGroup() {
     var form = document.createElement('form');
     form.innerHTML = `<input type="text" placeholder="Group name?">`;
+    form.setAttribute('onkeydown', 'return noenter(event)')
 
     var article = document.createElement('article');
     article.id = 'dropIt';
@@ -46,3 +47,7 @@ function dragStart(ev) {
     document.getElementById('list').appendChild(form);
     document.getElementById('list').appendChild(article);
   }
+
+  function noenter(ev)  {
+    if (ev.key === 'Enter') ev.preventDefault();
+ }

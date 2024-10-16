@@ -50,7 +50,7 @@
         <p>Click on the "+" next to "Add a new group" to make new categories as needed.</p>
         <div id="list">
         <form id="form">
-        <input type="text" placeholder="Group name?">
+        <input type="text" placeholder="Group name?"  onkeydown="return noenter(event)">
         </form>
       <article id="dropIt" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event)" ondragover="return dragOver(event)"></article>
       </div>
